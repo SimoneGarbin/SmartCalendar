@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.andrea.smartcalendar.calendar.MainActivity"
+    android:weightSum="1"
+    android:background="@color/White">
+
+
+    <include layout="@layout/view_event_toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="-30dp"
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_centerVertical="true"
+            android:onClick="addCalendarEvent"
+            app:srcCompat="@drawable/ic_add"
+            android:background="@drawable/round_button" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="-50dp"
+        >
+
+    <ImageButton
+        android:id="@+id/mapButton"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_centerVertical="true"
+        android:onClick="openEventsMap"
+        app:srcCompat="@drawable/ic_map"
+        android:background="@drawable/round_button" />
+    </RelativeLayout>
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/calendar_id"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+    </CalendarView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/events_area_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center|top"
+            android:textColor="@color/Black" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

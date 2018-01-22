@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Smart Calendar</string>
+    <string name="no_events"> no events </string>
+    <string name="event_name"> Nome Evento </string>
+    <string name="position"> Posizione </string>
+    <string name="transport"> Trasporto </string>
+    <string name="save"> Salva </string>
+    <string name="car"> Auto </string>
+    <string name="walk"> Piedi </string>
+    <string name="error_date"> Data di fine minore di data di inizio</string>
+    <string name="error_hour"> Ora di fine minore di ora di inizio</string>
+    <string name="hello"> Hello World</string>
+    <string name="minutes"> Minuti Prima </string>
+    <string name="hours"> Ore Prima </string>
+    <string name="days">  Giorni Prima </string>
+    <string name="weeks">  Settimane Prima </string>
+    <string name="no_notification">  No </string>
+    <string name="delete"> Elimina </string>
+    <string name="no_gps"> Segnale GPS assente </string>
+    <string name="no_gps_message"> Impossibile utilizzare le informazioni sulla posizione corrente</string>
+    <string name="permission_granted"> Permesso Concesso </string>
+    <string name="permission_denied"> Permesso Negato </string>
+    <string name="delete_entry"> Elimina Evento</string>
+    <string name="delete_entry_message"> Sei sicuro di voler eliminare l evento? </string>
+    <string name="origin"> Origine </string>
+    <string name="duration"> Durata del tragitto dalla posizione precedente </string>
+    <string name="no_connection"> Nessuna connessione Internet </string>
+    <string name="no_connection_message"> Impossibile utilizzare le informazioni sul tragitto </string>
+    <string name="event_saved"> Evento Salvato </string>
+    <string name="event_deleted"> Evento Eliminato </string>
+    <string name="event_modified"> Evento Modificato </string>
+    <string name="activate_notification"> Attiva Notifica </string>
+    <string name="location_based_notification"> Notifica Basata sulla Posizione </string>
+    <string name="notification"> Notifica </string>
+
+
+</resources>

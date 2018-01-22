@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Smart Calendar</string>
+    <string name="no_events"> no events </string>
+    <string name="event_name"> Name of Event </string>
+    <string name="position"> Position </string>
+    <string name="transport"> Transport </string>
+    <string name="save"> Save </string>
+    <string name="car"> Car </string>
+    <string name="walk"> Walk </string>
+    <string name="error_date"> Starting date less than start date </string>
+    <string name="error_hour"> Start time minor end time </string>
+    <string name="hello"> Hello World</string>
+    <string name="minutes"> Minutes Before </string>
+    <string name="hours"> Hours Before </string>
+    <string name="days">  Days Before </string>
+    <string name="weeks">  Weeks Before </string>
+    <string name="no_notification">  No </string>
+    <string name="delete"> Delete </string>
+    <string name="no_gps"> No GPS signal </string>
+    <string name="no_gps_message"> The current location information can not be used </string>
+    <string name="permission_granted"> Permission Granted </string>
+    <string name="permission_denied"> Permission Denied </string>
+    <string name="delete_entry"> Delete Event </string>
+    <string name="delete_entry_message"> Are you sure you want to delete this event? </string>
+    <string name="origin"> Origin </string>
+    <string name="duration"> Duration of the travel from the previous position </string>
+    <string name="no_connection"> No Internet Connection </string>
+    <string name="no_connection_message"> Route information can not be used </string>
+    <string name="event_saved"> Event Saved </string>
+    <string name="event_deleted"> Event Deleted </string>
+    <string name="event_modified"> Event Modified </string>
+    <string name="activate_notification"> Activate Notification </string>
+    <string name="location_based_notification"> Location Based Notification </string>
+    <string name="notification"> Notify </string>
+</resources>

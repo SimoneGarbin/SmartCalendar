@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context="com.example.andrea.smartcalendar.calendar.ViewEvent">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/view_event_toolbar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="29dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@mipmap/ic_access_time_black" />
+
+    <TextView
+        android:id="@+id/action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/action_bar_title"
+        app:srcCompat="@mipmap/ic_place_black" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@mipmap/ic_notifications_black" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@mipmap/ic_directions" />
+
+    <TextView
+        android:id="@+id/textInitial_Date"
+        android:layout_width="90sp"
+        android:layout_height="22sp"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignStart="@+id/textInitial_Hour" />
+    <TextView
+        android:id="@+id/textFinal_Date"
+        android:layout_width="90sp"
+        android:layout_height="22sp"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/textInitial_Date"
+        android:layout_alignBottom="@+id/textInitial_Date"
+        android:layout_toEndOf="@+id/textInitial_Date" />
+    <TextView
+        android:id="@+id/textInitial_Hour"
+        android:layout_marginStart="60dp"
+        android:layout_width="90sp"
+        android:layout_height="22sp"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginTop="9dp" />
+    <TextView
+        android:id="@+id/textFinal_Hour"
+        android:layout_marginStart="150dp"
+        android:layout_width="90sp"
+        android:layout_height="22sp"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginTop="9dp" />
+
+    <TextView
+        android:id="@+id/textPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/textInitial_Hour"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignEnd="@+id/textFinal_Hour" />
+
+    <TextView
+        android:id="@+id/textNotification"
+        android:layout_width="45sp"
+        android:layout_height="44sp"
+        android:textSize="16sp"
+        android:layout_above="@+id/map"
+        android:layout_alignStart="@+id/textPosition"
+        android:layout_marginStart="13dp"
+        android:layout_alignTop="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textTypeNotification"
+        android:layout_width="90sp"
+        android:layout_height="44sp"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/textNotification"
+        android:layout_toEndOf="@+id/textNotification"
+        android:layout_alignTop="@+id/textNotification" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        app:srcCompat="@drawable/ic_delete"
+        android:background="@drawable/round_button"
+        android:onClick="deleteCalendarEvent"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_alignStart="@+id/imagePositionActivated"
+        android:layout_marginStart="8dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        app:srcCompat="@drawable/ic_create_black"
+        android:background="@drawable/round_button"
+        android:layout_marginEnd="15dp"
+        android:layout_above="@+id/textFinal_Date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="7dp"
+        android:onClick="modifyCalendarEvent"/>
+
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="400sp"
+        android:layout_height="200sp"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="90dp"
+        android:layout_toEndOf="@+id/action_bar_title"
+        />
+
+    <ImageView
+        android:id="@+id/imagePositionActivated"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/map"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textTypeNotification"
+        android:visibility="invisible"
+        app:srcCompat="@mipmap/ic_positon_activated" />
+
+    <ImageView
+        android:id="@+id/imagePositionDeactivated"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/map"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textTypeNotification"
+        android:visibility="invisible"
+        app:srcCompat="@mipmap/ic_position_deactivated" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textPosition"
+        android:layout_below="@+id/textNotification"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:ems="10" />
+
+</RelativeLayout>
